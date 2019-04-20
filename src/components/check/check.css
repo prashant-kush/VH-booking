@@ -1,0 +1,141 @@
+.check
+{
+	background-image:url("iiit.jpg");
+	/*background-color: black;*/
+	background-blend-mode: luminosity;
+	/*width: 100%;*/
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*position: relative;
+	z-index: 1;*/
+	overflow: hidden;
+
+}
+#heading
+{
+	margin: 0px;
+	padding:0px;
+	position: relative;
+	top: 10%;
+	color: #90723A;
+	
+	font-size: 60px;
+}
+#heading2
+{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 10%;
+	color: #90723A;
+	font-size: 40px;
+	
+}
+
+@media only screen and (max-width: 1000px)
+{
+	#heading
+	{
+		top:15%;
+	}
+	#heading2
+	{
+		top:15%;
+	}
+}
+@media only screen and (max-width: 680px)
+{
+	#heading
+	{
+		font-size: 40px;
+	}
+	#heading2
+	{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 460px)
+{
+	#heading
+	{
+		font-size: 30px;
+		
+	}
+	#heading2
+	{
+		font-size: 20px;
+		
+	}
+}
+@media only screen and (max-width: 375px)
+{
+	#heading
+	{
+		font-size: 28px;
+		
+	}
+	#heading2
+	{
+		font-size: 18px;
+		
+	}
+}
+.check-form
+{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	position: relative;
+	top:30%;	
+}
+.arrival , .departure
+{
+	background-color: white;
+	padding:10px;
+	width: 350px;
+	color: #90723A;
+	font-size: 20px;
+	text-align: left;
+	height:80px; 
+	
+}
+#calender-svg
+{
+	height: 40px;
+	width: 40px;
+}
+@media only screen and (max-width: 1000px)
+{
+	.check-form
+	{
+		/*display: flex;
+		flex-direction: column;
+		justify-content: space-around;*/
+		/*top:25%;*/
+
+	}
+	.arrival , .departure
+	{
+		width: 190px;
+		font-size: 15px;
+		height:70px;
+	}
+	.calender-svg
+	{
+		height: 30px;
+		width: 30px;
+	}
+}
+@media only screen and (max-width: 500px)
+{
+	.check-form
+	{
+		display: block;
+		align-self: center;
+		/*flex-direction: column;
+		justify-content: space-around;*/
+		top:25%;
+
+	}
+}

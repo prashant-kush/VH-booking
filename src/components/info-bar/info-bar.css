@@ -1,0 +1,99 @@
+.Infobar
+{
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	border-bottom: solid;
+	border-width: 1px;
+	position: absolute;
+	left: 20%;
+	right: 20%;
+}
+
+.Infobar-left
+{
+	list-style-type: none;
+	display:flex;
+	justify-content: center;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+.Infobar-right
+{
+	list-style-type:none;
+	display:flex;
+	justify-content: center;
+	margin: 0px;
+	padding: 0px;
+}
+li
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	display: flex;
+	justify-content: center;
+}
+#weather
+{
+	padding-top:7px; 
+
+}
+#location
+{
+	padding-top:7px; 
+
+}
+#phone
+{
+	padding-top:7px; 
+
+}
+#login:hover
+{
+	cursor: pointer;
+}
+#register:hover
+{
+	cursor: pointer;
+}
+span
+{
+	padding: 5px;
+}
+a
+{
+	padding: 5px;
+	color: inherit;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px)
+{
+	.Infobar
+	{
+		display:block;
+	}
+}
+@media only screen and (max-width: 680px)
+{
+	.Infobar
+	{
+		left: 24%;
+		right: 16%;
+	}
+}
+@media only screen and (max-width: 635px)
+{
+	#location > span
+	{
+		display: none;
+	}
+	#location::after
+	{
+		content: "Gwalior";
+		padding-top:7px;
+	}
+}

@@ -1,0 +1,136 @@
+.nav-buttons
+{
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.navbar {
+  align-items: center;
+  /*background: #90723A;*/
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 3em;
+}
+  
+.navbar__list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    text-align: center;
+  }
+
+.navbar__btn {
+    /*all: unset;*/
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+.navbar__item {
+    &--social {
+      margin: 1em 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+.navbar__link {
+    color: #fff;
+    transition: all 300ms ease;
+  }
+
+
+.nav {
+  background: #90723A;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  transition: all 300ms ease;
+  transform: translatex(-25em);
+  visibility: hidden;
+  width: 20em;
+  z-index: 100;
+}
+
+.nav__list {
+    list-style: none;
+  }
+
+.nav__item {
+    margin: 1em 0;
+  }
+
+.nav__link {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 300ms ease;
+  }
+
+.nav__link:hover {
+      color: darken(#f7373a, 25);
+    }
+  
+
+.nav__btn {
+    /*all: unset;*/
+    color: #f7373a;
+    cursor: pointer;
+    display: block;
+    padding: 0.5em;
+    position: absolute;
+    font-size: 1.5rem;
+    right: -2em;
+    top: 0.15em;
+    transition: all 300ms ease;
+  }
+    
+.nav__btn:hover {
+      color: darken(#f7373a, 25);
+    }
+  
+
+  .nav--is-visible {
+    transform: translatex(0);
+    visibility: visible;
+  }
+  #cross
+  {
+    fill: black;
+  }
+  #burger
+  {
+    fill:black;
+  }
+
+
+@media (max-width: 40em) {
+  .nav {
+    width: 15em;
+  }
+    
+    .nav__link {
+      font-size: 1.25rem;
+    }
+    
+    .nav__btn {
+      color: #fff;
+      font-size: 1rem;
+      right: .5em;
+      top: .5em;
+    }
+    #cross
+    {
+      fill:black;
+    }
+  }
